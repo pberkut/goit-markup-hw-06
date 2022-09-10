@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The best WebStudio" />
+  <title>WebStudio</title>
+  <!-- Add fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- Add CSS -->
+  <!-- modern-normalize css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- my css -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body class="page">
+  <!-- Header page -->
+  <header class="page-header">
+    <div class="container">
+      <a class="logo link" href="./index.html"><span class="logo-accent-span">Web</span><span
+          class="logo-header-span">Studio</span></a>
+      <nav class="main-nav">
+        <ul class="list">
+          <li class="nav-item">
+            <a class="nav-link link" href="./index.html">Студія</a>
+            <div class="nav-link-decoration"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link current link" href="./portfolio.html">Портфоліо</a>
+            <div class="nav-link-decoration"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="">Контакти</a>
+            <div class="nav-link-decoration"></div>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-contacts list">
+        <li class="header-contacts-item">
+          <a class="contact-link link" href="mailto:info@devstudio.com">
+            <svg class="contact-icon" width="16" height="12">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="header-contacts-item">
+          <a class="contact-link link" href="tel:+380961111111">
+            <svg class="contact-icon" width="10" height="16">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Main page -->
+  <main class="main">
+    <!-- Portfolio section -->
+    <section class="portfolio section">
+      <div class="container">
+        <h1 class="portfolio-title u-vh">Портфоліо</h1>
+        <ul class="filter-list grid-set list">
+          <li class="list-item">
+            <button class="filter-btn grid-set-item" type="button">Усі</button>
+          </li>
+          <li class="list-item">
+            <button class="filter-btn grid-set-item" type="button">Веб-сайти</button>
+          </li>
+          <li class="list-item">
+            <button class="filter-btn grid-set-item" type="button">Додатки</button>
+          </li>
+          <li class="list-item">
+            <button class="filter-btn grid-set-item" type="button">Дизайн</button>
+          </li>
+          <li class="list-item">
+            <button class="filter-btn grid-set-item" type="button">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="gallery-portfolio grid-set list">
+          <li class="portfolio-card grid-set-item">
+            <a class="portfolio-link link" href="" target="_blank" rel="noopener nooferrer">
+              <div class="portfolio-thumb">
+                <img class="img" src="./images/gallery/project-1.jpg" alt="На ноутбуці відкритий Веб-сайт." width="370"
+                  height="294" />
+                <div class="portfolio-card-overlay">
+                  <p class="project-desc">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio-wrap">
+                <h2 class="project-name">Технокряк</h2>
+                <p class="project-type">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card grid-set-item">
+            <a class="portfolio-link link" href="" target="_blank" rel="noopener nooferrer">
+              <img class="img" src="./images/gallery/project-2.jpg" alt="Два баскетболіста." width="370" height="294" />
+              <div class="portfolio-wrap">
+                <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
+                <p class="project-type">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card grid-set-item">
+            <a class="portfolio-link link" href="" target="_blank" rel="noopener nooferrer">
+              <img class="img" src="./images/gallery/project-3.jpg" alt="Логотип додатка Seafood." width="370"
+                height="294" />
+              <div class="portfolio-wrap">
+                <h2 class="project-name">Ресторан Seafood</h2>
+                <p class="project-type">Додаток</p>
+
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card grid-set-item">
+            <a class="portfolio-link link" href="" target="_blank" rel="noopener nooferrer">
+              <img class="img" src="./images/gallery/project-4.jpg" alt="Навушники." width="370" height="294" />
+              <div class="portfolio-wrap">
+                <h2 class="project-name">Проєкт Prime</h2>
+                <p class="project-type">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card grid-set-item">
+            <a class="portfolio-link link" href="" target="_blank" rel="noopener nooferrer">
+              <img class="img" src="./images/gallery/project-5.jpg" alt="Дві коробки." width="370" height="294" />
+              <div class="portfolio-wrap">
+                <h2 class="project-name">Проєкт Boxes</h2>
+                <p class="project-type">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card grid-set-item">
+            <a class="portfolio-link link" href="" target="_blank" rel="noopener nooferrer">
+              <img class="img" src="./images/gallery/project-6.jpg" alt="Приклад Веб-сайту." width="370" height="294" />
+              <div class="portfolio-wrap">
+                <h2 class="project-name" lang="en">Inspiration has no Borders</h2>
+                <p class="project-type">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card grid-set-item">
+            <a class="portfolio-link link" href="" target="_blank" rel="noopener nooferrer">
+              <img class="img" src="./images/gallery/project-7.jpg" alt="Ілюстрація журналу." width="370"
+                height="294" />
+              <div class="portfolio-wrap">
+                <h2 class="project-name">Видання Limited Edition</h2>
+                <p class="project-type">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card grid-set-item">
+            <a class="portfolio-link link" href="" target="_blank" rel="noopener nooferrer">
+              <img class="img" src="./images/gallery/project-8.jpg" alt="Логотип проекту Lab El Tag" width="370"
+                height="294" />
+              <div class="portfolio-wrap">
+                <h2 class="project-name">Проєкт LAB</h2>
+                <p class="project-type">Маркетинг</p>
+
+              </div>
+            </a>
+          </li>
+          <li class="portfolio-card grid-set-item">
+            <a class="portfolio-link link" href="" target="_blank" rel="noopener nooferrer">
+              <img class="img" src="./images/gallery/project-9.jpg" alt="На наоутбуці відкритий сайт." width="370"
+                height="294" />
+              <div class="portfolio-wrap">
+                <h2 class="project-name" lang="en">Growing Business</h2>
+                <p class="project-type">Додаток</p>
+
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- Footer page -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="footer-group">
+        <a class="logo link" href="./index.html"><span class="logo-accent-span">Web</span><span
+            class="logo-footer-span">Studio</span></a>
+        <address class="address">
+          <p class="text">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="list">
+            <li class="address-item">
+              <a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="address-item">
+              <a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="join">
+        <h2 class="join-title">приєднуйтесь</h2>
+        <ul class="socials-list grid-set list">
+          <li class="socials-item">
+            <a class="socials-link link" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg class="socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              aria-label="Twitter">
+              <svg class="socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link link" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">
+              <svg class="socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <svg class="socials-icon" width="20" height="20">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
