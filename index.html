@@ -399,15 +399,17 @@
         </ul>
       </div>
       <div class="subscribe">
-        <div class="wrap">
-          <label class="subscribe-label" for="subscribe-email">Підпишіться на розсилку</label>
-          <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="E-mail">
-        </div>
-        <button class="btn" type="submit">Підписатися
-          <svg width="24" height="24">
-            <use href="./images/icons.svg#icon-send"></use>
-          </svg>
-        </button>
+        <form class="subscribe">
+          <div class="wrap">
+            <label class="subscribe-label" for="subscribe-email">Підпишіться на розсилку</label>
+            <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="E-mail">
+          </div>
+          <button class="btn" type="submit">Підписатися
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </footer>
@@ -420,11 +422,47 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <form class="register-form" name="register-form" autocomplete="on">
+        <p class="register-text">Залиште свої дані, ми вам передзвонимо</p>
+        <label for="name">Им'я</label>
+        <input type="text" name="name" id="name">
+
+        <label for="tel">Телефон</label>
+        <input type="tel" name="telephone" id="tel">
+
+        <label for="email">Пошта</label>
+        <input type="email" name="email" id="email">
+
+        <label for="comment">Коментар</label>
+        <input type="textarea" name="comment" id="comment">
+
+        <input type="checkbox" name="license" id="license">
+        <label for="license">Погоджуюся з розсилкою та приймаю <span>Умови договору</span></label>
+
+        <button type="submit">Відправити</button>
+
+      </form>
     </div>
   </div>
 
   <!-- JS modal -->
   <script src="./js/modal.js"></script>
+  <!-- Script for console log -->
+  <script>
+    (() => {
+      document
+        .querySelector('.register-form')
+        .addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`),
+          );
+
+          e.currentTarget.reset();
+        });
+    })();
+  </script>
 </body>
 
 </html>
