@@ -766,11 +766,69 @@ body {
   width: 528px;
   height: 581px;
 
+  padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--white-bg-cl);
 
   transition: transform var(--anim);
+}
+
+.form-register-title {
+  display: block;
+  margin-bottom: 12px;
+
+  /* font-weight: var(--font-weight-bold); */
+  font-size: 20px;
+  line-height: calc(23/20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* color: var(--main-txt-cl); */
+}
+
+.form-label {
+  /* display: inline-block; */
+  font-size: 12px;
+  line-height: calc(14/12);
+  letter-spacing: 0.01em;
+  color: var(--grey-txt-cl);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group .form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* .form-group .form-field:last-child .form-input {
+  display: inline-block;
+  width: 448px;
+  height: 120px;
+} */
+
+textarea {
+  width: 448px;
+  height: 120px;
+  resize: none;
+}
+
+.form-register>.form-field {
+  margin-bottom: 32px;
+}
+
+.form-register>.form-field::placeholder {
+  font-size: 14px;
+  line-height: calc(24/14);
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-cl);
 }
 
 .modal-btn {
