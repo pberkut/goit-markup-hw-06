@@ -430,7 +430,7 @@
 
           <label class="register-form-field">
             <span class="register-form-label">Им'я</span>
-            <input class="register-form-input" type="text" name="user-name" required>
+            <input class="register-form-input" type="text" name="user-name" minlength="3" required>
             <svg class="register-form-icon" width="18" height="18">
               <use href="./images/icons.svg#placeholder-name"></use>
             </svg>
@@ -460,14 +460,17 @@
 
         </div>
 
-        <div class="form-checkbox">
-          <input class="form-input" type="checkbox" name="user-license" id="user-agreement">
-          <label class="form-label" for="user-license">
-            <span class="label-text">
-              Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
-            </span>
-          </label>
-        </div>
+        <label class="register-form-agreement">
+          <input class="register-form-checkbox u-vh" type="checkbox" name="user-agreement">
+          <svg class="register-form-icons" width="16" height="15">
+            <use class="icon-checked" href="./images/icons.svg#checked"></use>
+            <use class="icon-unchecked" href="./images/icons.svg#unchecked"></use>
+          </svg>
+          <span class="register-form-desc">
+            Погоджуюся з розсилкою та приймаю <a class="register-form-link" href="" target="_blank">Умови договору</a>
+          </span>
+        </label>
+
 
         <button class="submit-btn" type="submit">Відправити</button>
       </form>
