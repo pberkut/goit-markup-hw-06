@@ -766,7 +766,10 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+
+  cursor: pointer;
 }
+
 
 /**
   |============================
@@ -994,4 +997,10 @@ body {
 .modal .submit-btn {
   margin-left: auto;
   margin-right: auto;
+
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: var(--btn-active-cl);
 }
