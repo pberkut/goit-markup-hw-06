@@ -768,6 +768,8 @@ body {
   border: none;
 
   cursor: pointer;
+
+  transition: background-color var(--anim);
 }
 
 
