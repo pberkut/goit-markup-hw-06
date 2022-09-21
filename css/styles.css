@@ -751,11 +751,12 @@ body {
 .submit-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 
-  width: 200px;
-  height: 50px;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 28px;
 
   font-weight: 700;
   font-size: 16px;
@@ -995,10 +996,17 @@ body {
   user-select: none;
 }
 
+.register-form-link {
+  color: var(--accent-txt-cl);
+}
+
 
 .modal .submit-btn {
   margin-left: auto;
   margin-right: auto;
+
+  padding-right: 52px;
+  padding-left: 52px;
 
   cursor: pointer;
 }
